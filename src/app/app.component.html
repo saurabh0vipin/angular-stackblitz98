@@ -4,3 +4,16 @@ Name: {{firstname}} {{lastname}} Age: {{age}}
 <br><br>
 Using Interpolation only once<br>
 {{'Name: ' + firstname + ' ' + lastname + ' Age: ' + age}}
+
+<br><br><br>
+<!-- Event biniding -->
+<div class="container">
+  <div class="form-group">
+      <label for="name">First Name</label>
+      <input type="text" class="form-control" required name="name" [value]="name">
+    </div>
+
+    <button class="btn btn-success" type="button" (click)="changeText()">Submit</button>
+
+</div>
+
