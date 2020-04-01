@@ -1,4 +1,5 @@
 <!-- Interpolation Sample -->
+<h3>Interpolation</h3>
 Using Interpolation<br>
 Name: {{firstname}} {{lastname}} Age: {{age}}
 <br><br>
@@ -6,7 +7,9 @@ Using Interpolation only once<br>
 {{'Name: ' + firstname + ' ' + lastname + ' Age: ' + age}}
 
 <br><br><br>
+
 <!-- Event biniding -->
+<h3>property/Event binding</h3>
 <div class="container">
   <div class="form-group">
       <label for="name">First Name</label>
@@ -17,3 +20,29 @@ Using Interpolation only once<br>
 
 </div>
 
+<br><br>
+
+<!-- Two way binding -->
+<h3>Two way binding </h3>
+<h4>two way binding without submit button</h4>
+<div class="container">
+  <input type="number" class="form-control" placeholder="1st value here" [(ngModel)]="val1" (input)="add()">
+  <br>
+  <input type="number" class="form-control" placeholder="2nd value here" [(ngModel)]="val2" (input)="add()">
+  
+  <input type="number" class="form-control" placeholder="sum here" [value]="sum1">
+</div>
+
+<h4>two way binding with submit button</h4>
+<div class="container">
+  <input type="number" class="form-control" placeholder="1st value here" [(ngModel)]="v1">
+  <br>
+  <input type="number" class="form-control" placeholder="2nd value here" [(ngModel)]="v2">
+
+  <input type="number" class="form-control" placeholder="result here" [(ngModel)]="sum2">
+  <br>
+  <button class="btn btn-success" type="button" (click)="add2()">sum</button>
+</div>
+
+  
+  
