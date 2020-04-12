@@ -33,4 +33,18 @@ add2()
     else
     this.name="saurabh_vipin"
   }
+
+
+  fruits:string[]=[];
+  constructor()
+  {
+    this.fruits.push("Apple");
+    this.fruits.push("Orange");
+    this.fruits.push("grapes");
+    this.fruits.push("Guava");
+    this.fruits.push("Banana");
+    this.fruits.push("Melons");
+    
+    console.log(this.fruits);
+  }
 }
