@@ -71,3 +71,23 @@ Using Interpolation only once<br>
     </li>
   </ul>
 </div>
+
+<br><br><br>
+
+<h2>ngClass & ngStyle </h2>
+<br>
+<div class ="container">
+  <ul class="list-group">
+    <li class="list-group-item" *ngFor="let y of people;">
+    <div [ngClass]="{
+      'text-primary':y.country=='IN',
+      'text-dark':y.country=='AU',
+      'text-danger':y.country=='UK',
+      'text-success':y.country=='US'
+    }" [ngStyle]="{
+      'font-size':'36px',
+      'text-decoration':'underline'
+    }">{{y.name}}-{{y.country}}</div>
+    </li>
+  </ul>
+</div>
