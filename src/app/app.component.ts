@@ -36,6 +36,14 @@ add2()
 
 
   fruits:string[]=[];
+  people:any[]=[
+    {"name":"Saurabh","age":22,"country":"IN"},
+    {"name":"Gabrial","age":31,"country":"AU"},
+    {"name":"obama","age":48,"country":"US"},
+    {"name":"Falpes","age":38,"country":"GE"},
+    {"name":"kavin","age":43,"country":"UK"},
+  ];
+
   constructor()
   {
     this.fruits.push("Apple");
@@ -44,7 +52,7 @@ add2()
     this.fruits.push("Guava");
     this.fruits.push("Banana");
     this.fruits.push("Melons");
-    
+
     console.log(this.fruits);
   }
 }

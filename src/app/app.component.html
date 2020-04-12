@@ -56,3 +56,18 @@ Using Interpolation only once<br>
 </div>
   
   
+<br><br><br>
+
+<h2>ngSwitch - </h2><h4>when we have some default cases other than if or we have some fixed literals than we use Switch</h4>
+<br>
+<div class ="container">
+  <ul class="list-group">
+    <li class="list-group-item" *ngFor="let y of people" [ngSwitch]="y.country">
+    <div *ngSwitchCase="'IN'" class="text-primary">{{y.name}}-{{y.country}}</div>
+    <div *ngSwitchCase="'UK'" class="text-success">{{y.name}}-{{y.country}}</div>
+    <div *ngSwitchCase="'US'" class="text-danger">{{y.name}}-{{y.country}}</div>
+    <div *ngSwitchCase="'AU'" class="text-success">{{y.name}}-{{y.country}}</div>
+    <div *ngSwitchDefault class="text-dark">{{y.name}}-{{y.country}}</div>
+    </li>
+  </ul>
+</div>
