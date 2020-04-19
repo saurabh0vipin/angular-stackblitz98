@@ -7,8 +7,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent  {
 
-  constructor()
+   f_name:string;
+   l_name:string;
+  onSubmit(signupform)
   {
-
+    this.f_name=signupform.value['first_name'];
+    this.l_name=signupform.value['last_name'];
   }
 }
